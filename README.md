@@ -45,10 +45,10 @@ sudo docker push registry.hackathon-container.com/packapp01/customer:[version]
 ### ssh connection
 ssh -i [hackathon_certificate_path]/hackathon-ec2-tp.pem ec2-user@ec2-52-210-144-207.eu-west-1.compute.amazonaws.com
 
-### deploy customers pods
+### deploy customers pods & replicaset
 kubectl create -f customer-deployment.yaml
 
-### deploy advisors pods
+### deploy advisors pods & replicaset
 kubectl create -f advisor-deployment.yaml
 
 ### deploy customers service
