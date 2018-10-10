@@ -1,5 +1,7 @@
 # hackathoncontainers
 
+## project architecture
+
 ## advisor container
 
 ### download project
@@ -62,3 +64,6 @@ kubectl create -f main-ingress.yaml
 
 ### control pods deployment
 kubectl get pods
+
+### see logs
+kubectl logs [pod_id]
