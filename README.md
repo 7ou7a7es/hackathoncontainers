@@ -1,7 +1,7 @@
 # hackathoncontainers
 
 ## project architecture
-<img src="https://github.com/gujou/hackathoncontainers/blob/master/images/architecture.png"
+<img src="https://github.com/gujou/hackathoncontainers/blob/master/images/archi.png"
      alt="Architecture overview"
      width="70%" />
 
