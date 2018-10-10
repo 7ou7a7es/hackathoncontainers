@@ -1,6 +1,10 @@
 # hackathoncontainers
 
 ## project architecture
+img src="https://raw.githubusercontent.com/hackathonpackapp/containerbank/master/readme_architecture-overview.png"
+<img src="https://github.com/gujou/hackathoncontainers/blob/master/images/architecture.png"
+     alt="Architecture overview"
+     width="70%" />
 
 ## advisor container
 
