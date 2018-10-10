@@ -40,4 +40,19 @@ sudo docker login registry.hackathon-container.com
 ### push image to docker repository
 sudo docker push registry.hackathon-container.com/packapp01/customer:[version]
 
+## Deploy to k8s
 
+### ssh connection
+ssh -i [hackathon_certificate_path]/hackathon-ec2-tp.pem ec2-user@ec2-52-210-144-207.eu-west-1.compute.amazonaws.com
+
+### deploy customers pods
+kubectl create -f customer-deployment.yaml
+
+### deploy advisors pods
+kubectl create -f advisor-deployment.yaml
+
+### deploy customers service
+kubectl create -f customer-service.yaml
+
+### deploy advisors service
+kubectl create -f advisor-service.yaml
