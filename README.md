@@ -19,8 +19,8 @@ sudo docker build . --tag advisor:[version]
 ### run container
 sudo docker run -it --rm -p [connection_port]:8080 --name [container_name] advisor:[version]
 
-# tag docker image
-sudo docker tag advisor:[version] registry.hackathon-container.com/packapp01/advisor:[version]"
+### tag docker image
+sudo docker tag advisor:[version] registry.hackathon-container.com/packapp01/advisor:[version]
 
 ### login docker repository hackathon-container.com
 sudo docker login registry.hackathon-container.com
@@ -42,8 +42,8 @@ sudo docker build . --tag customer:[version]
 ### run container
 sudo docker run -it --rm -p [connection_port]:8080 --name [container_name] customer:[version]
 
-# tag docker image
-sudo docker tag customer:[version] registry.hackathon-container.com/packapp01/customer:[version]"
+### tag docker image
+sudo docker tag customer:[version] registry.hackathon-container.com/packapp01/customer:[version]
 
 ### login docker repository hackathon-container.com
 sudo docker login registry.hackathon-container.com
