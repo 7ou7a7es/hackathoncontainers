@@ -56,3 +56,9 @@ kubectl create -f customer-service.yaml
 
 ### deploy advisors service
 kubectl create -f advisor-service.yaml
+
+### deploy ingress
+kubectl create -f main-ingress.yaml
+
+### control pods deployment
+kubectl get pods
