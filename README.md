@@ -65,5 +65,8 @@ kubectl create -f main-ingress.yaml
 ### control pods deployment
 kubectl get pods
 
-### see logs
+### see pod logs
 kubectl logs [pod_id]
+
+### connect bash pod to debug
+kubectl exec -it [pod_id] -- /bin/bash
