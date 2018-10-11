@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customer-deployment
+  namespace: packapp01
+spec:
+  selector:
+    matchLabels:
+      app: customer
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: customer
+    spec:
+      containers:
+      - name: customer
+        image: registry.hackathon-container.com/packapp01/customer:1.10
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: registry

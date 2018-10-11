@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: containerbank
+  namespace: packapp01
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: monapp01.hackathon-container.com
+    http:
+      paths: 
+      - path: /
+        backend:
+          serviceName: customer-svc
+          servicePort: 81
+      - path: /containerbank/advisor
+        backend:
+          serviceName: advisor-svc
+          servicePort: 82
+  tls:
+  - hosts:
+    - monapp01.hackathon-container.com
+

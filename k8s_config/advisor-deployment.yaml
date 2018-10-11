@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: advisor-deployment
+  namespace: packapp01
+spec:
+  selector:
+    matchLabels:
+      app: advisor
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: advisor
+    spec:
+      containers:
+      - name: advisor
+        image: registry.hackathon-container.com/packapp01/advisor:1.11
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: registry
