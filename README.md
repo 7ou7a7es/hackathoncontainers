@@ -1,6 +1,6 @@
 # hackathoncontainers
 
-## project architecture actuel
+## project architecture
 <img src="https://github.com/gujou/hackathoncontainers/blob/master/images/archi_last.png"
      alt="Architecture overview"
      width="70%" />
