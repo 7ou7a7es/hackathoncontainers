@@ -101,4 +101,20 @@ kubectl logs [pod_id]
 kubectl exec -it [pod_id] -- /bin/bash
 
 ## k8s config
+
+
+### Advisor : 
+deployment  : Advisor-deployment.yaml  (replica 2 / port 8080) 
+service : advisor-service.yaml (VIP cluster IP port 82 -> 8080)
+
+### Custormer:
+deployment : customer-deployment.yaml (replica 3/ port 8080)
+service : customer-service.yaml    (cluster IP port 81 -> 8080)
+
+### Ingress:
+main-ingress.yaml
+redirect / -> customer service
+redirect /containerbank/advisor -> advisor service
+
+### config files
 https://github.com/gujou/hackathoncontainers/tree/master/k8s_config
