@@ -99,3 +99,6 @@ kubectl logs [pod_id]
 
 ### connect bash pod to debug
 kubectl exec -it [pod_id] -- /bin/bash
+
+## k8s config
+https://github.com/gujou/hackathoncontainers/tree/master/k8s_config
