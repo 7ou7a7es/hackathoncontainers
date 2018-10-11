@@ -1,9 +1,12 @@
 # hackathoncontainers
 
 ## project architecture
-<img src="https://github.com/gujou/hackathoncontainers/blob/master/images/archi.png"
+<img src="https://github.com/gujou/hackathoncontainers/blob/master/images/archi_last.png"
      alt="Architecture overview"
      width="70%" />
+
+## projet url
+https://monapp01.hackathon-container.com/containerbank/
 
 ## advisor container
 
@@ -11,13 +14,19 @@
 git clone https://github.com/gujou/advisorcontainer.git
 
 ### build project
-mvn clean package
+mvn clean package -P=MySQL
+
+### local test on tomcat
+mvn tomcat7:run-war -P=MySQL
 
 ### build docker image
 sudo docker build . --tag advisor:[version]
 
 ### run container
 sudo docker run -it --rm -p [connection_port]:8080 --name [container_name] advisor:[version]
+
+### tag docker image
+sudo docker tag advisor:[version] registry.hackathon-container.com/packapp01/advisor:[version]
 
 ### login docker repository hackathon-container.com
 sudo docker login registry.hackathon-container.com
@@ -31,13 +40,19 @@ sudo docker push registry.hackathon-container.com/packapp01/advisor:[version]
 git clone https://github.com/gujou/customercontainer.git
 
 ### build project
-mvn clean package
+mvn clean package -P=MySQL
+
+### local test on tomcat
+mvn tomcat7:run-war -P=MySQL
 
 ### build docker image
 sudo docker build . --tag customer:[version]
 
 ### run container
 sudo docker run -it --rm -p [connection_port]:8080 --name [container_name] customer:[version]
+
+### tag docker image
+sudo docker tag customer:[version] registry.hackathon-container.com/packapp01/customer:[version]
 
 ### login docker repository hackathon-container.com
 sudo docker login registry.hackathon-container.com
