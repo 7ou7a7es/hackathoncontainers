@@ -14,7 +14,10 @@ https://monapp01.hackathon-container.com/containerbank/
 git clone https://github.com/gujou/advisorcontainer.git
 
 ### build project
-mvn clean package
+mvn clean package -P=MySQL
+
+### local test on tomcat
+mvn tomcat7:run-war -P=MySQL
 
 ### build docker image
 sudo docker build . --tag advisor:[version]
@@ -37,7 +40,10 @@ sudo docker push registry.hackathon-container.com/packapp01/advisor:[version]
 git clone https://github.com/gujou/customercontainer.git
 
 ### build project
-mvn clean package
+mvn clean package -P=MySQL
+
+### local test on tomcat
+mvn tomcat7:run-war -P=MySQL
 
 ### build docker image
 sudo docker build . --tag customer:[version]
