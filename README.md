@@ -119,5 +119,5 @@ redirect /containerbank/advisor -> advisor service
 ### config files
 https://github.com/gujou/hackathoncontainers/tree/master/k8s_config
 
-## Show log customers services calls with time
+## Show log customers services calls (logs end with time in ms)
 https://kibana.hackathon-container.com/app/kibana#/discover?_g=()&_a=(columns:!(message),index:f3af7350-cd36-11e8-b77b-a7199e083105,interval:auto,query:(language:lucene,query:'packapp01%20%26%26%20customercontainer'),sort:!('@timestamp',desc))
