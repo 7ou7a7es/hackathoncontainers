@@ -120,4 +120,4 @@ redirect /containerbank/advisor -> advisor service
 https://github.com/gujou/hackathoncontainers/tree/master/k8s_config
 
 ## Log containers services calls with time
-https://kibana.hackathon-container.com/app/kibana#/discover?_g=()&_a=(columns:!(message),index:f3af7350-cd36-11e8-b77b-a7199e083105,interval:auto,query:(language:lucene,query:'packapp01 %26%26 customercontainer'),sort:!('@timestamp',desc))
+https://kibana.hackathon-container.com/app/kibana#/discover?_g=()&_a=(columns:!(message),index:f3af7350-cd36-11e8-b77b-a7199e083105,interval:auto,query:(language:lucene,query:'packapp01%20%26%26%20customercontainer'),sort:!('@timestamp',desc))
