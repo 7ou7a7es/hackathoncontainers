@@ -121,3 +121,6 @@ https://github.com/gujou/hackathoncontainers/tree/master/k8s_config
 
 ## show logs customers services calls (logs end with time in ms)
 https://kibana.hackathon-container.com/app/kibana#/discover?_g=()&_a=(columns:!(message),index:f3af7350-cd36-11e8-b77b-a7199e083105,interval:auto,query:(language:lucene,query:'packapp01%20%26%26%20customercontainer'),sort:!('@timestamp',desc))
+
+## show logs customers services calls (logs end with time in ms && last 4 hours)
+https://kibana.hackathon-container.com/app/kibana#/discover?_g=(refreshInterval:(pause:!t,value:0),time:(from:now-4h,mode:quick,to:now))&_a=(columns:!(message),index:f3af7350-cd36-11e8-b77b-a7199e083105,interval:auto,query:(language:lucene,query:'packapp01%20%26%26%20customercontainer'),sort:!('@timestamp',desc))
