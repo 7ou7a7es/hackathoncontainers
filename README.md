@@ -1,9 +1,20 @@
 # hackathoncontainers
 
-## project architecture
+## project architecture actuel
 <img src="https://github.com/gujou/hackathoncontainers/blob/master/images/archi_last.png"
      alt="Architecture overview"
      width="70%" />
+
+
+## project target logic architecture
+<img src="https://github.com/gujou/hackathoncontainers/blob/master/images/archi_logique_cible.png"
+     alt="Architecture overview"
+     width="70%" />
+     
+## project target deployment architecture
+<img src="https://github.com/gujou/hackathoncontainers/blob/master/images/archi_deploy_cible.png"
+     alt="Architecture overview"
+     width="70%" /> 
 
 ## projet url
 https://monapp01.hackathon-container.com/containerbank/
